@@ -4,165 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>GnvTech</title>
+    <title>Govind Vijay - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .nav-active {
+            border-bottom: 2px solid #4f46e5;
+        }
+    </style>
 </head>
-<body style="background-color:rgb(5, 211, 211);">
-     
-    <header class="text-black-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Govind Vijay</span>
-          </a>
-          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <a href="https://github.com/Govindv7555" target="blank"class="mr-5 hover:text-gray-900">Github</a>
-            <a href="#cu"class="mr-5 hover:text-gray-900">Contact</a>
-            <a href="/"class="mr-5 hover:text-gray-900">Services</a>
-            <a href="/"class="mr-5 hover:text-gray-900">About</a>
-          </nav>
-          <!--<button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Enroll Now
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">-->
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+    
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex flex-wrap p-4 md:p-5 flex-col md:flex-row items-center justify-between">
+            <a href="#home" class="flex title-font font-bold items-center text-gray-900 mb-4 md:mb-0">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-code text-white"></i>
+                </div>
+                <span class="ml-3 text-xl">Govind Vijay</span>
+            </a>
+            <nav class="flex flex-wrap items-center text-base gap-1 md:gap-6 justify-center">
+                <a href="#home" class="nav-link px-3 py-2 hover:text-indigo-600 transition">Home</a>
+                <a href="#about" class="nav-link px-3 py-2 hover:text-indigo-600 transition">About</a>
+                <a href="#services" class="nav-link px-3 py-2 hover:text-indigo-600 transition">Services</a>
+                <a href="#quotes" class="nav-link px-3 py-2 hover:text-indigo-600 transition">Inspiration</a>
+                <a href="#contact" class="nav-link px-3 py-2 hover:text-indigo-600 transition">Contact</a>
+                <a href="https://github.com/Govindv7555" target="_blank" class="px-3 py-2 hover:text-indigo-600 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+            </nav>
         </div>
-      </header>  
+    </header>
 
-<hr>
-      <section class="text-black-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to Govind Vijay's First Website
-              <br class="hidden lg:inline-block">
-            </h1>
-            <p class="mb-8 leading-relaxed">This is my first website made by me. Here you can see my details,rankings,profiles etc.</p>
-            <div class="flex justify-center">
-                <a href="https://www.sololearn.com/profile/20306147/" target="blank"><button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Sololearn</button></a>
-              <a href="https://github.com/Govindv7555"target="blank"><button class="ml-4 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Github</button></a>
-              <a href="https://drive.google.com/drive/folders/1PTRwsKqnTHKFA3tM5kbu553cybOvS-4s?usp=sharing" target="blank"><button class="ml-4 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Certificates</button></a>
+    <!-- Hero Section -->
+    <section id="home" class="pt-12 pb-24 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="md:w-1/2 flex flex-col">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Welcome to My Digital Space
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    I'm a passionate full-stack developer crafting modern web solutions. Explore my work, achievements, and let's connect!
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#services" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition font-semibold">
+                        View Services
+                    </a>
+                    <a href="#contact" class="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-6 py-3 rounded-lg transition font-semibold">
+                        Get in Touch
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?coding">
-          </div>
-        </div>
-        <hr>
-      </section>
-    <section class="text-black-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Programming Quotes</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">If you are born poor it’s not your mistake, but if you die poor it’s your mistake -Bill Gates<br>First, solve the problem. Then, write the code -John Johnson</p>
-    </div>
-    <div class="flex flex-wrap -m-4 text-center">
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-red-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M8 17l4 4 4-4m-4-5v9"></path>
-            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">250+</h2>
-          <p class="leading-relaxed">Followers</p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-red-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">60+</h2>
-          <p class="leading-relaxed">Achievements</p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-red-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-            <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">15+</h2>
-          <p class="leading-relaxed">Certificates</p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-red-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
-          <h2 class="title-font font-medium text-3xl text-gray-900">100+</h2>
-          <p class="leading-relaxed">Challenges Won</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<hr>
-<section class="text-black-600 body-font relative" id="cu">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-12">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You can send me Queries here!</p>
-      </div>
-      <div class="lg:w-1/2 md:w-2/3 mx-auto">
-        <div class="flex flex-wrap -m-2">
-          <div class="p-2 w-1/2">
-            <div class="relative">
-              <label for="name" class="leading-7 text-sm text-black-600">Name</label>
-              <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            <div class="md:w-1/2">
+                <img id="heroImage" class="w-full rounded-2xl shadow-xl object-cover h-96" alt="Hero Image">
             </div>
-          </div>
-          <div class="p-2 w-1/2">
-            <div class="relative">
-              <label for="email" class="leading-7 text-sm text-black-600">Email</label>
-              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-          </black
-          <div class="p-2 w-full">
-            <div class="relative">
-              <label for="message" class="leading-7 text-sm text-black-600">Message</label>
-              <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-            </div>
-          </div>
-          <div class="p-2 w-full">
-            <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Submit</button>
-          </div>
-          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-            <a class="text-black-500">govind52278@gmail.com</a>
-            <p class="leading-normal my-5">Madhavasseril House
-              <br>Mangalam, CGNR 689124,Kerala
-            </p>
-            <span class="inline-flex">
-              <a class="text-black-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-4 text-black-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-4 text-black-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a class="ml-4 text-black-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>
-              </a>
-            </span>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Achievements & Stats</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl text-center">
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">250+</div>
+                    <p class="text-gray-700 font-semibold">Community Followers</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">60+</div>
+                    <p class="text-gray-700 font-semibold">Achievements</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl text-center">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">15+</div>
+                    <p class="text-gray-700 font-semibold">Certificates</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl text-center">
+                    <div class="text-4xl font-bold text-pink-600 mb-2">100+</div>
+                    <p class="text-gray-700 font-semibold">Challenges Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Web Development</h3>
+                    <p class="text-gray-600">Building responsive and modern web applications using latest technologies and best practices.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile Apps</h3>
+                    <p class="text-gray-600">Creating cross-platform mobile applications that deliver seamless user experiences.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-purple-600 text-4xl mb-4"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600">Designing intuitive interfaces that combine aesthetics with functionality and user needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section id="quotes" class="py-24 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Daily Inspiration</h2>
+            <p class="text-center text-gray-600 mb-12">Get inspired with programming wisdom</p>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 md:p-12 rounded-2xl shadow-lg border-l-4 border-indigo-600">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-quote-left text-indigo-400 text-3xl flex-shrink-0 mt-2"></i>
+                        <div class="flex-1">
+                            <p id="quoteText" class="text-xl md:text-2xl text-gray-800 font-semibold mb-4 italic">
+                                Loading quote...
+                            </p>
+                            <p id="quoteAuthor" class="text-right text-gray-600 font-medium">
+                                — Loading...
+                            </p>
+                        </div>
+                    </div>
+                    <button id="newQuoteBtn" class="mt-6 w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg transition font-semibold">
+                        <i class="fas fa-redo mr-2"></i>New Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get In Touch</h2>
+            <p class="text-center text-gray-600 mb-12">Have a question? I'd love to hear from you!</p>
+            
+            <form id="contactForm" class="bg-white p-8 rounded-xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">Subject</label>
+                    <input type="text" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Message subject">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                    <textarea name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg transition font-semibold">
+                    Send Message
+                </button>
+            </form>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center">
+                    <div class="text-indigo-600 text-3xl mb-3"><i class="fas fa-envelope"></i></div>
+                    <p class="font-semibold text-gray-900">Email</p>
+                    <a href="mailto:govind52278@gmail.com" class="text-indigo-600 hover:underline">govind52278@gmail.com</a>
+                </div>
+                <div class="text-center">
+                    <div class="text-indigo-600 text-3xl mb-3"><i class="fas fa-map-marker-alt"></i></div>
+                    <p class="font-semibold text-gray-900">Location</p>
+                    <p class="text-gray-600">Mangalam, Kerala 689124, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="https://github.com/Govindv7555" target="_blank" class="hover:text-indigo-400 transition"><i class="fab fa-github text-2xl"></i></a>
+                <a href="https://www.sololearn.com/profile/20306147/" target="_blank" class="hover:text-indigo-400 transition"><i class="fas fa-graduation-cap text-2xl"></i></a>
+                <a href="https://drive.google.com/drive/folders/1PTRwsKqnTHKFA3tM5kbu553cybOvS-4s?usp=sharing" target="_blank" class="hover:text-indigo-400 transition"><i class="fas fa-file-alt text-2xl"></i></a>
+            </div>
+            <p class="text-gray-400">© 2024 Govind Vijay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
