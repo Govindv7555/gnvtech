@@ -117,11 +117,10 @@
                     <div class="text-4xl font-bold text-blue-600 mb-2">60+</div>
                     <p class="text-gray-700 font-semibold">Achievements</p>
                 </div>
-                <a href="#certificatesModal" class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl text-center hover:shadow-lg transition cursor-pointer" onclick="document.getElementById('certificatesModal').classList.add('active')">
+                <div onclick="window.open('https://drive.google.com/drive/folders/1PTRwsKqnTHKFA3tM5kbu553cybOvS-4s?usp=sharing', '_blank')" class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl text-center hover:shadow-lg transition cursor-pointer">
                     <div class="text-4xl font-bold text-purple-600 mb-2">20+</div>
                     <p class="text-gray-700 font-semibold">Certificates</p>
-                    <p class="text-sm text-purple-500 mt-2"><i class="fas fa-click"></i> Click to view</p>
-                </a>
+                </div>
                 <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl text-center hover:shadow-lg transition">
                     <div class="text-4xl font-bold text-pink-600 mb-2">100+</div>
                     <p class="text-gray-700 font-semibold">Challenges Won</p>
@@ -225,111 +224,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Certificates Modal -->
-    <div id="certificatesModal" class="modal" onclick="if(event.target === this) this.classList.remove('active')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <div class="sticky top-0 bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-6 flex justify-between items-center">
-                <div>
-                    <h2 class="text-3xl font-bold">My Certificates</h2>
-                    <p class="text-purple-100">Professional Development & Achievements</p>
-                </div>
-                <button onclick="document.getElementById('certificatesModal').classList.remove('active')" class="text-2xl hover:bg-white hover:bg-opacity-20 p-2 rounded transition">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="p-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Certificate Items -->
-                    <div class="certificate-item bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border-2 border-purple-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-purple-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">Full Stack Web Development</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">SoloLearn - Advanced web development techniques</p>
-                        <p class="text-xs text-purple-600 mt-2">✓ Verified</p>
-                    </div>
-
-                    <div class="certificate-item bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl border-2 border-blue-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-blue-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">JavaScript Mastery</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">SoloLearn - Expert level JavaScript</p>
-                        <p class="text-xs text-blue-600 mt-2">✓ Verified</p>
-                    </div>
-
-                    <div class="certificate-item bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border-2 border-green-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-green-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">React Development</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">Advanced React patterns & hooks</p>
-                        <p class="text-xs text-green-600 mt-2">✓ Verified</p>
-                    </div>
-
-                    <div class="certificate-item bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl border-2 border-orange-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-orange-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">Python Programming</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">Complete Python course completion</p>
-                        <p class="text-xs text-orange-600 mt-2">✓ Verified</p>
-                    </div>
-
-                    <div class="certificate-item bg-gradient-to-br from-pink-50 to-rose-50 p-6 rounded-xl border-2 border-pink-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-pink-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">UI/UX Design</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">Modern design principles & Figma</p>
-                        <p class="text-xs text-pink-600 mt-2">✓ Verified</p>
-                    </div>
-
-                    <div class="certificate-item bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl border-2 border-indigo-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-indigo-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">Data Structures</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">DSA fundamentals & algorithms</p>
-                        <p class="text-xs text-indigo-600 mt-2">✓ Verified</p>
-                    </div>
-
-                    <div class="certificate-item bg-gradient-to-br from-cyan-50 to-blue-50 p-6 rounded-xl border-2 border-cyan-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-cyan-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">API Development</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">REST & GraphQL API design</p>
-                        <p class="text-xs text-cyan-600 mt-2">✓ Verified</p>
-                    </div>
-
-                    <div class="certificate-item bg-gradient-to-br from-yellow-50 to-amber-50 p-6 rounded-xl border-2 border-yellow-200 shadow-md hover:shadow-xl">
-                        <div class="flex items-start gap-3 mb-3">
-                            <i class="fas fa-certificate text-yellow-600 text-2xl"></i>
-                            <h3 class="text-lg font-bold text-gray-900">Git & Version Control</h3>
-                        </div>
-                        <p class="text-sm text-gray-600">Professional Git workflows</p>
-                        <p class="text-xs text-yellow-600 mt-2">✓ Verified</p>
-                    </div>
-                </div>
-
-                <div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-2 border-blue-300 text-center">
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div>
-                            <p class="text-gray-700 font-semibold text-lg">View All Certificates</p>
-                            <p class="text-sm text-gray-600">Total Certificates: <span class="text-indigo-600 font-bold">20+</span></p>
-                        </div>
-                        <a href="https://drive.google.com/drive/folders/1PTRwsKqnTHKFA3tM5kbu553cybOvS-4s?usp=sharing" target="_blank" class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white px-8 py-3 rounded-lg transition font-semibold flex items-center gap-2 whitespace-nowrap">
-                            <i class="fas fa-external-link-alt"></i>
-                            Open Google Drive
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8 px-4">
